@@ -1,7 +1,6 @@
 streamlit
 pandas
 numpy
-matplotlib
-statsmodels
+altair
 yfinance
-scipy
+requests
