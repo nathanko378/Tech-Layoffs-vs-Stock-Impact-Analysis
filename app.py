@@ -173,7 +173,7 @@ st.markdown("---")
 # ----------------------------
 # Key findings (simple + weighted stats)
 # ----------------------------
-st.subheader("🔍 Key Findings (Based on Current Filters)")
+st.subheader("Key Findings (Based on Current Filters)")
 
 if filtered_df.empty:
     st.warning("No events match your current filters. Try adjusting them in the sidebar.")
@@ -221,7 +221,7 @@ st.markdown("---")
 # ----------------------------
 # Regression section
 # ----------------------------
-st.subheader("📈 Simple Line Fit: Layoff % vs Stock Returns")
+st.subheader("Simple Line Fit: Layoff % vs Stock Returns")
 
 if filtered_df.empty:
     st.info("Not enough data for a line fit under current filters.")
@@ -370,7 +370,7 @@ st.markdown("---")
 # ----------------------------
 # Correlation: Layoff Severity vs Performance
 # ----------------------------
-st.subheader("📊 Correlation Matrix: Layoff Severity vs Performance")
+st.subheader("Correlation Matrix: Layoff Severity vs Performance")
 
 if not filtered_df.empty:
     possible_corr_cols = [
@@ -438,7 +438,7 @@ st.markdown("---")
 # ----------------------------
 # Raw data
 # ----------------------------
-st.subheader("📊 Raw Layoff Event Data")
+st.subheader("Raw Layoff Event Data")
 
 if filtered_df.empty:
     st.info("No rows to display for the current filters.")
@@ -461,7 +461,7 @@ else:
 # ----------------------------
 # Methodology
 # ----------------------------
-st.subheader("🧠 Methodology & Project Notes")
+st.subheader("Methodology & Project Notes")
 
 st.markdown(
     """
