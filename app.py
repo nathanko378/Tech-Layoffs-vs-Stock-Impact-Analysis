@@ -107,7 +107,7 @@ st.set_page_config(
     layout="wide",
 )
 
-CSV_PATH = "/Users/nathanko/PycharmProjects/tech-layoffs-stock-analysis/data/processed/layoff_vs_immediate_updated.csv"
+CSV_PATH = "data/processed/layoff_vs_immediate_updated.csv"
 layoff_df = load_layoff_data(CSV_PATH)
 
 # simple benchmark constant (nominal, illustrative)
