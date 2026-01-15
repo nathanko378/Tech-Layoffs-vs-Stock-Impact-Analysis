@@ -1,4 +1,4 @@
-# 📉 Tech Layoffs vs Stock Market Impact
+# Tech Layoffs vs Stock Market Impact
 
 This project is an end-to-end data pipeline and interactive dashboard analyzing how major tech company's layoffs affect its respective stock prices over 5-day and 1-year horizons.
 
@@ -10,7 +10,7 @@ Using Layoffs.fyi data and Yahoo Finance stock prices, the system automatically 
 
 ---
 
-## 🔍 What This Project Does
+## What This Project Does
 
 This project:
 - Ingests real-world layoff data
@@ -23,7 +23,7 @@ The result is a research-grade dataset and a live analytical dashboard that expl
 
 ---
 
-## 📊 Data Sources
+## Data Sources
 
 | Source | What It Provides |
 |------|----------------|
@@ -32,7 +32,7 @@ The result is a research-grade dataset and a live analytical dashboard that expl
 
 ---
 
-## 🧠 Pipeline Overview
+## Pipeline Overview
 
 ```text
 Layoffs.fyi CSV
@@ -52,7 +52,7 @@ Streamlit dashboard
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 data/
@@ -75,47 +75,7 @@ app.py
 
 ---
 
-## 🧹 Step 1 — Clean & Filter Layoff Data
-
-- Loads raw Layoffs.fyi data  
-- Keeps Post-IPO companies only  
-- Converts company names to stock tickers  
-- Removes invalid tickers  
-
-Output:
-```text
-data/raw/clean_layoff_data.csv
-```
-
----
-
-## 📈 Step 2 — Measure 5-Day Market Reaction
-
-- Uses Yahoo Finance data to compute:
-  - Dollar change
-  - Percent change
-- Measures price movement 5 trading days after each layoff  
-
-Output:
-```text
-data/processed/layoff_vs_immediate.csv
-```
-
----
-
-## 📅 Step 3 — Measure 1-Year Market Reaction
-
-- Computes stock return from the layoff date to one year later  
-- Handles weekends and non-trading days automatically  
-
-Output:
-```text
-data/processed/layoff_vs_immediate_updated.csv
-```
-
----
-
-## 📊 Final Dataset Columns
+## Final Dataset Columns
 
 Each row represents one layoff event:
 
@@ -132,7 +92,7 @@ Each row represents one layoff event:
 
 ---
 
-## 🖥️ Streamlit Dashboard
+##  Streamlit Dashboard
 
 The Streamlit app provides:
 - Filters by ticker, date, and layoff size
@@ -145,7 +105,7 @@ It lets users interactively explore how layoff size relates to stock performance
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 Install dependencies:
 ```bash
@@ -165,9 +125,4 @@ streamlit run app.py
 ```
 
 ---
-
-
-## 👨‍💻 Author
-
-Nathan Ko  
-BMath @ University of Waterloo  
+ 
